@@ -60,6 +60,7 @@ first_stage_summ_AIC <- function(p, R, betaZX, betaZY, se_betaZY, n1, n2, gamma_
   }
   
   first_stage_IV <- unique(whichIV)
+  first_stage_IV <- first_stage_IV[first_stage_IV > 0]
   return(first_stage_IV)
 }
 
@@ -126,5 +127,6 @@ first_stage_summ_BIC <- function(p, R, betaZX, betaZY, se_betaZY, n1, n2, gamma_
   }
   
   first_stage_IV <- unique(whichIV)
+  first_stage_IV <- first_stage_IV[first_stage_IV > 0]
   return(first_stage_IV)
 }
